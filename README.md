@@ -13,3 +13,6 @@ Dalam satu eksekusi function `main()`, program mengirim 5 pesan bertipe `UserCre
 **2. The url of: “amqp://guest:guest@localhost:5672” is the same as in the subscriber program, what does it mean?**
 
 URL `amqp://guest:guest@localhost:5672` digunakan oleh publisher dan subscriber agar keduanya terhubung ke server AMQP yang sama. Bagian `guest:guest` menunjukkan kredensial (username dan password), sementara `localhost:5672` adalah alamat dan port server RabbitMQ yang digunakan. Jika URL berbeda, subscriber tidak akan bisa menerima pesan dari publisher karena mereka akan terhubung ke sesi atau instance server yang berbeda, sehingga tidak saling bertukar pesan.
+
+**Running RabbitMQ as message broker**
+![Image](https://github.com/user-attachments/assets/95b4fda4-6177-4f8e-a8c4-c8cd57e8cb51)
