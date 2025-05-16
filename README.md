@@ -21,3 +21,7 @@ URL `amqp://guest:guest@localhost:5672` digunakan oleh publisher dan subscriber 
 ![Image](https://github.com/user-attachments/assets/f102b871-fb8a-4041-ab0d-5ff093049a1a)
 ![Image](https://github.com/user-attachments/assets/a242e154-f661-4b5b-b5df-cec65d33cade)
 Pada dua ilustrasi screenshot di atas, dapat terlihat bahwa saat program Publisher dan Subscriber dijalankan menggunakan cargo run, Publisher mengirimkan 5 data pengguna ke message broker, dan Subscriber berhasil menerima seluruh data tersebut.
+
+### Monitoring Chart based on Publisher
+![Image](https://github.com/user-attachments/assets/5d2dfa64-ec3e-434c-b763-8f6086213619)
+Dibalik screenshot RabbitMQ tsb, saya melakukan run berulang kali di publisher. Hal ini menyebabkan lonjakan (spike) pada grafik message rate, yang menunjukkan tingginya aktivitas pengiriman dan penerimaan pesan antara publisher dan subscriber. Spike tersebut mencerminkan volume data yang tinggi yang diterima oleh broker dalam waktu singkat.
